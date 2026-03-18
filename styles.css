@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background-image: url("assets/Front-pic5-1.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+.cabecera nav {
+  display: flex;
+  gap: 20px;
+}
+
+.cabecera nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cabecera nav a:hover {
+  color: #38bdf8;
+  transform: scale(1.1);
+}
+
+
+.cabecera img {
+  height: 50px;
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+@media (max-width: 768px) {
+  .cabecera {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .main {
+    padding: 20px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
